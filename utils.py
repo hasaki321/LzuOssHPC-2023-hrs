@@ -7,7 +7,7 @@ import logging
 from easydict import EasyDict as edict
 import pickle
 
-from model import GoogLeNet, ResNet
+from model import GoogLeNet, ResNet,VGG
 
 
 def get_transform(mode="train"):
@@ -55,11 +55,9 @@ def get_model(config):
                           aux_logits=config.aux_logits,
                           init_weights=config.init_weights)
     elif model == "vgg":
-        pass
+        model = VGG(config.num_classes)
     elif model == "resnet":
-        model = ResNet(
-            num_classes=config.num_classes
-        )
+        model = ResNet(config.num_classes)
     return model
 
 def dump_data(total_loss,total_acc,config):
