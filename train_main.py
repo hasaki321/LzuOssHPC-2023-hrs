@@ -5,6 +5,8 @@ import torch.nn as nn
 import torch.optim as optim
 from tqdm.auto import tqdm
 from utils import load_config, get_model, get_dataloader, dump_data
+from model import GoogLeNet
+import time
 
 
 def train_step(batch, model, loss_fn, optimizer):
@@ -13,8 +15,15 @@ def train_step(batch, model, loss_fn, optimizer):
     images = images.to(config.dev)
     target = target.to(config.dev)
 
-    output = model(images)
-    loss = loss_fn(output, target)
+    if  isinstance(model,GoogLeNet):
+        output,out2,out3 = model(images)
+        loss1 = loss_fn(output, target)
+        loss2 = loss_fn(out2, target)
+        loss3 = loss_fn(out3, target)
+        loss = loss1*0.6 + loss2*0.2 + loss3*0.2
+    else:
+        output = model(images)
+        loss = loss_fn(output, target)
 
     loss.backward()
     optimizer.step()
@@ -64,6 +73,7 @@ def valid(valid_loader, model, loss_fn):
         acc_recoder.append(acc)
     logger.info(
         f'Valid loss={(sum(loss_recoder) / len(loss_recoder)):.5f} ,acc={(sum(acc_recoder) / len(acc_recoder)):.5f}')
+    return loss_recoder,acc_recoder
 
 
 def test(test_loader, model, loss_fn):
@@ -93,8 +103,13 @@ def test(test_loader, model, loss_fn):
 def main():
     global config
 
-    total_loss = [1, ]
-    total_acc = [1, ]
+    logger.info(f"---model {config.model} start training---")
+    start_time = time.time()
+    total_loss = []
+    total_acc = []
+    valid_loss = []
+    valid_acc = []
+    best_acc = 0
     model = get_model(config)
 
     model.to(config.dev)
@@ -112,18 +127,32 @@ def main():
         total_loss += loss_recoder
         total_acc += acc_recoder
 
-        valid(valid_loader, model, loss_fn)
+        vloss_recoder,vacc_recoder = valid(valid_loader, model, loss_fn)
+        valid_loss += vloss_recoder
+        valid_acc += vacc_recoder
 
-        if (epoch + 1) // config.save_epoch:
+        if (sum(vacc_recoder)/len(vacc_recoder))>best_acc:
+            best_acc = sum(vacc_recoder)/len(vacc_recoder)
             torch.save(model.state_dict(), config.save_pth)
             logger.info(f"save model parameter at epoch {epoch + 1}")
 
-    test(valid_loader, model, loss_fn)
-    dump_data(total_loss, total_acc, config)
+    end_time = time.time()
+    train_time = start_time-end_time
+    training_time_formatted = time.strftime("%H:%M:%S", time.gmtime(train_time))
+
+    test(test_loader, model, loss_fn)
+    dump_data(config,total_loss, total_acc, valid_loss,valid_acc)
+
+    logger.info(f"training model {config.model} finish")
+    logger.info(f"time cost: {training_time_formatted}")
+    
+
 
 
 if __name__ == '__main__':
-    config = load_config("./config/resnet.yml")
-    logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    logger = logging.getLogger(__name__)
-    main()
+    models = ['resnet','google','vgg']
+    for model in models:
+        config = load_config(f"./config/{model}.yml")
+        logging.basicConfig(filename='training.log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        logger = logging.getLogger(__name__)
+        main()

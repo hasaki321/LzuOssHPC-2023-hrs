@@ -60,6 +60,6 @@ def get_model(config):
         model = ResNet(config.num_classes)
     return model
 
-def dump_data(total_loss,total_acc,config):
+def dump_data(config,*data):
     with open(config.save_data,"wb") as f:
-        pickle.dump([total_loss,total_acc],f,protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump([*data],f,protocol=pickle.HIGHEST_PROTOCOL)
