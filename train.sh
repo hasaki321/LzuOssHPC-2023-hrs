@@ -1,5 +1,4 @@
-# models=("resnet" "vgg" "google")
-models=("effnet")
+models=("resnet" "vgg" "google" "effnet")
 
 for model in "${models[@]}"; do
     echo "model: $model start training"
