@@ -1,6 +1,7 @@
 import torch.nn as nn
 import torch
 import torch.nn.functional as F
+from torchvision.models import efficientnet_v2_s
 
 
 
@@ -69,7 +70,7 @@ class ResNet(nn.Module):
             layers.append(block(self.in_ch, channel))
         return nn.Sequential(*layers)
 
-    def forward(self,x):
+    def forward(self, x):
         out = self.pre_conv(x)
         out = self.conv1(out)
         out = self.conv2(out)
@@ -77,7 +78,7 @@ class ResNet(nn.Module):
         out = self.conv4(out)
 
         out = self.avgpool(out)
-        out = torch.flatten(out,1)
+        out = torch.flatten(out, 1)
         out = self.fc(out)
         return out
 
@@ -85,8 +86,8 @@ class ResNet(nn.Module):
 class VGGBlock(nn.Module):
     def __init__(self, in_ch, out_ch, num_layer):
         super().__init__()
-        net = [self.get_layer(out_ch, out_ch) for _ in range(1,num_layer)]
-        net.insert(0,self.get_layer(in_ch, out_ch))
+        net = [self.get_layer(out_ch, out_ch) for _ in range(1, num_layer)]
+        net.insert(0, self.get_layer(in_ch, out_ch))
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2)
         self.net = nn.Sequential(*net)
 
@@ -110,7 +111,7 @@ class VGG(nn.Module):
         self.conv4 = self.get_block(256, 512, 3)
         self.conv5 = self.get_block(512, 512, 3)
         self.fc = nn.Sequential(
-            nn.Linear(7*7*512, 4096),
+            nn.Linear(7 * 7 * 512, 4096),
             nn.Linear(4096, 4096),
             nn.ReLU(),
             nn.Linear(4096, out_features),
@@ -126,7 +127,7 @@ class VGG(nn.Module):
         out = self.conv4(out)
         out = self.conv5(out)
 
-        out = torch.flatten(out,1)
+        out = torch.flatten(out, 1)
 
         out = self.fc(out)
         return out
@@ -255,3 +256,20 @@ class BasicConv2d(nn.Module):
         x = self.conv(x)
         x = self.bn(x)
         return x
+    
+class EffNetV2(nn.Module):
+    def __init__(self, num_classes):
+        super().__init__()
+        self.effnet = efficientnet_v2_s()
+        self.fcn = nn.Linear(1000,num_classes)
+    
+    def forward(self,x):
+        x = self.effnet(x)
+        x = self.fcn(x)
+        return x
+
+    def __str__(self):
+        return efficientnet_v2_s
+
+if __name__ =="__main":
+    print(EffNetV2)

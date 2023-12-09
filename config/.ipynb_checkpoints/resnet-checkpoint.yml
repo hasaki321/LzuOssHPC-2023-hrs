@@ -1,0 +1,11 @@
+batch_size: 32
+num_epoch: 100
+learning_rate: 0.00003
+model: resnet
+weight_decay: 0.0005
+num_classes: 100
+
+save_epoch: 10
+
+save_pth: './save/resnet.pth'
+save_data: './save/resnet_loss_acc.pkl'

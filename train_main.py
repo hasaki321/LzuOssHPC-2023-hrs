@@ -4,9 +4,12 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from tqdm.auto import tqdm
-from utils import load_config, get_model, get_dataloader, dump_data
+from utils import *
 from model import GoogLeNet
 import time
+import argparse
+from torch.optim import lr_scheduler
+from sam import SAM
 
 
 def train_step(batch, model, loss_fn, optimizer):
@@ -22,12 +25,23 @@ def train_step(batch, model, loss_fn, optimizer):
         loss3 = loss_fn(out3, target)
         loss = loss1*0.6 + loss2*0.2 + loss3*0.2
     else:
+        if isinstance(model,EffNetV2):
+            enable_running_stats(model)
         output = model(images)
         loss = loss_fn(output, target)
 
     loss.backward()
-    optimizer.step()
-    optimizer.zero_grad()
+
+    if isinstance(model,EffNetV2):
+        optimizer.first_step(zero_grad=True)
+  
+        disable_running_stats(model)
+        loss_fn(model(images), target).backward()
+        optimizer.second_step(zero_grad=True)
+    else:
+        optimizer.step()
+        optimizer.zero_grad()
+
 
     acc = (output.argmax(dim=-1) == target).float().mean()
 
@@ -116,9 +130,14 @@ def main():
     train_loader, valid_loader, test_loader = get_dataloader(config.batch_size)
 
     loss_fn = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(params=model.parameters(),
+    if isinstance(model,EffNetV2):
+        optimizer = SAM(model.parameters(), optim.Adam, lr=config.learning_rate)
+    else:
+        optimizer = optim.Adam(params=model.parameters(),
                            lr=config.learning_rate,
                            weight_decay=config.weight_decay)
+    
+    scheduler = lr_scheduler.LambdaLR(optimizer, lr_lambda=lambda step: max(1 - step / config.num_epoch, 0.2))
 
     for epoch in range(config.num_epoch):
         loss_recoder, acc_recoder = train_epoch(train_loader, model, loss_fn, optimizer, epoch)
@@ -135,24 +154,27 @@ def main():
             best_acc = sum(vacc_recoder)/len(vacc_recoder)
             torch.save(model.state_dict(), config.save_pth)
             logger.info(f"save model parameter at epoch {epoch + 1}")
+        scheduler.step()
 
     end_time = time.time()
-    train_time = start_time-end_time
-    training_time_formatted = time.strftime("%H:%M:%S", time.gmtime(train_time))
+    train_time = end_time-start_time
+    # training_time_formatted = time.strftime("%H:%M:%S", time.gmtime(train_time))
 
     test(test_loader, model, loss_fn)
     dump_data(config,total_loss, total_acc, valid_loss,valid_acc)
 
     logger.info(f"training model {config.model} finish")
-    logger.info(f"time cost: {training_time_formatted}")
+    logger.info(f"time cost: {train_time}")
     
 
 
 
 if __name__ == '__main__':
-    models = ['resnet','google','vgg']
-    for model in models:
-        config = load_config(f"./config/{model}.yml")
-        logging.basicConfig(filename='training.log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        logger = logging.getLogger(__name__)
-        main()
+    parser = argparse.ArgumentParser(description='train network')
+    parser.add_argument('--model', type=str, help='模型类型')
+    args = parser.parse_args()
+    model = args.model
+    config = load_config(f"./config/{model}.yml")
+    logging.basicConfig(filename=f'save/train_{model}.log',level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    logger = logging.getLogger(__name__)
+    main()

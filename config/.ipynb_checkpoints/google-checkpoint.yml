@@ -1,0 +1,12 @@
+batch_size: 32
+num_epoch: 100
+learning_rate: 0.00005
+model: google
+weight_decay: 0.0005
+num_classes: 100
+
+aux_logits: True
+save_epoch: 10
+
+save_pth: './save/google.pth'
+save_data: './config/google_loss_acc.pkl'

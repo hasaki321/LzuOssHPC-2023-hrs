@@ -1,0 +1,17 @@
+2023-11-24 18:04:17,306 - __main__ - INFO - ---model google start training---
+2023-11-25 02:32:33,435 - __main__ - INFO - ---model google start training---
+2023-11-25 02:32:59,241 - __main__ - INFO - ---model google start training---
+2023-11-25 02:33:28,636 - __main__ - INFO - ---model google start training---
+2023-11-25 02:36:02,541 - __main__ - INFO - Epoch 1: loss=4.23476 ,acc=0.05812
+2023-11-25 02:36:12,732 - __main__ - INFO - Valid loss=3.97689 ,acc=0.08347
+2023-11-25 02:36:13,027 - __main__ - INFO - save model parameter at epoch 1
+2023-11-25 02:38:38,446 - __main__ - INFO - Epoch 2: loss=3.87337 ,acc=0.10532
+2023-11-25 02:38:48,858 - __main__ - INFO - Valid loss=3.60476 ,acc=0.14437
+2023-11-25 02:38:49,161 - __main__ - INFO - save model parameter at epoch 2
+2023-11-25 03:25:38,246 - __main__ - INFO - ---model google start training---
+2023-11-25 03:28:11,393 - __main__ - INFO - Epoch 1: loss=3.97938 ,acc=0.10421
+2023-11-25 03:28:21,900 - __main__ - INFO - Valid loss=3.53067 ,acc=0.16873
+2023-11-25 03:28:22,178 - __main__ - INFO - save model parameter at epoch 1
+2023-11-25 03:28:37,812 - __main__ - INFO - Test loss=4.50746 ,acc=0.03494
+2023-11-25 03:28:37,821 - __main__ - INFO - training model google finish
+2023-11-25 03:28:37,821 - __main__ - INFO - time cost: 163.93205404281616

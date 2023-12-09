@@ -1,0 +1,261 @@
+2023-11-24 18:04:17,306 - __main__ - INFO - ---model google start training---
+2023-11-25 02:32:33,435 - __main__ - INFO - ---model google start training---
+2023-11-25 02:32:59,241 - __main__ - INFO - ---model google start training---
+2023-11-25 02:33:28,636 - __main__ - INFO - ---model google start training---
+2023-11-25 02:36:02,541 - __main__ - INFO - Epoch 1: loss=4.23476 ,acc=0.05812
+2023-11-25 02:36:12,732 - __main__ - INFO - Valid loss=3.97689 ,acc=0.08347
+2023-11-25 02:36:13,027 - __main__ - INFO - save model parameter at epoch 1
+2023-11-25 02:38:38,446 - __main__ - INFO - Epoch 2: loss=3.87337 ,acc=0.10532
+2023-11-25 02:38:48,858 - __main__ - INFO - Valid loss=3.60476 ,acc=0.14437
+2023-11-25 02:38:49,161 - __main__ - INFO - save model parameter at epoch 2
+2023-11-25 03:25:38,246 - __main__ - INFO - ---model google start training---
+2023-11-25 03:28:11,393 - __main__ - INFO - Epoch 1: loss=3.97938 ,acc=0.10421
+2023-11-25 03:28:21,900 - __main__ - INFO - Valid loss=3.53067 ,acc=0.16873
+2023-11-25 03:28:22,178 - __main__ - INFO - save model parameter at epoch 1
+2023-11-25 03:28:37,812 - __main__ - INFO - Test loss=4.50746 ,acc=0.03494
+2023-11-25 03:28:37,821 - __main__ - INFO - training model google finish
+2023-11-25 03:28:37,821 - __main__ - INFO - time cost: 163.93205404281616
+2023-11-25 19:06:28,123 - __main__ - INFO - ---model google start training---
+2023-11-25 19:08:49,195 - __main__ - INFO - Epoch 1: loss=3.98580 ,acc=0.10468
+2023-11-25 19:08:58,352 - __main__ - INFO - Valid loss=3.56955 ,acc=0.15954
+2023-11-25 19:08:58,628 - __main__ - INFO - save model parameter at epoch 1
+2023-11-25 19:11:16,361 - __main__ - INFO - Epoch 2: loss=3.51620 ,acc=0.17468
+2023-11-25 19:11:26,594 - __main__ - INFO - Valid loss=3.15083 ,acc=0.23003
+2023-11-25 19:11:26,894 - __main__ - INFO - save model parameter at epoch 2
+2023-11-25 19:13:44,276 - __main__ - INFO - Epoch 3: loss=3.22414 ,acc=0.22948
+2023-11-25 19:13:54,982 - __main__ - INFO - Valid loss=2.97947 ,acc=0.26038
+2023-11-25 19:13:55,256 - __main__ - INFO - save model parameter at epoch 3
+2023-11-25 19:16:19,065 - __main__ - INFO - Epoch 4: loss=3.00837 ,acc=0.27399
+2023-11-25 19:16:29,326 - __main__ - INFO - Valid loss=2.70659 ,acc=0.32069
+2023-11-25 19:16:29,614 - __main__ - INFO - save model parameter at epoch 4
+2023-11-25 19:18:54,379 - __main__ - INFO - Epoch 5: loss=2.85089 ,acc=0.30304
+2023-11-25 19:19:04,934 - __main__ - INFO - Valid loss=2.61699 ,acc=0.33207
+2023-11-25 19:19:05,224 - __main__ - INFO - save model parameter at epoch 5
+2023-11-25 19:21:30,900 - __main__ - INFO - Epoch 6: loss=2.72358 ,acc=0.33522
+2023-11-25 19:21:42,019 - __main__ - INFO - Valid loss=2.47646 ,acc=0.36042
+2023-11-25 19:21:42,291 - __main__ - INFO - save model parameter at epoch 6
+2023-11-25 19:24:08,484 - __main__ - INFO - Epoch 7: loss=2.61329 ,acc=0.36241
+2023-11-25 19:24:18,348 - __main__ - INFO - Valid loss=2.37726 ,acc=0.38399
+2023-11-25 19:24:18,627 - __main__ - INFO - save model parameter at epoch 7
+2023-11-25 19:26:40,535 - __main__ - INFO - Epoch 8: loss=2.52258 ,acc=0.38235
+2023-11-25 19:26:50,042 - __main__ - INFO - Valid loss=2.36801 ,acc=0.39577
+2023-11-25 19:26:50,320 - __main__ - INFO - save model parameter at epoch 8
+2023-11-25 19:29:09,828 - __main__ - INFO - Epoch 9: loss=2.43730 ,acc=0.40065
+2023-11-25 19:29:20,539 - __main__ - INFO - Valid loss=2.24510 ,acc=0.41833
+2023-11-25 19:29:20,823 - __main__ - INFO - save model parameter at epoch 9
+2023-11-25 19:31:46,363 - __main__ - INFO - Epoch 10: loss=2.36588 ,acc=0.42220
+2023-11-25 19:31:57,214 - __main__ - INFO - Valid loss=2.21834 ,acc=0.42672
+2023-11-25 19:31:57,510 - __main__ - INFO - save model parameter at epoch 10
+2023-11-25 19:34:21,818 - __main__ - INFO - Epoch 11: loss=2.31674 ,acc=0.43506
+2023-11-25 19:34:31,946 - __main__ - INFO - Valid loss=2.13892 ,acc=0.43251
+2023-11-25 19:34:32,308 - __main__ - INFO - save model parameter at epoch 11
+2023-11-25 19:36:57,677 - __main__ - INFO - Epoch 12: loss=2.25131 ,acc=0.45087
+2023-11-25 19:37:08,128 - __main__ - INFO - Valid loss=2.09138 ,acc=0.45887
+2023-11-25 19:37:08,406 - __main__ - INFO - save model parameter at epoch 12
+2023-11-25 19:39:33,115 - __main__ - INFO - Epoch 13: loss=2.21034 ,acc=0.46095
+2023-11-25 19:39:43,629 - __main__ - INFO - Valid loss=2.04627 ,acc=0.45707
+2023-11-25 19:42:08,676 - __main__ - INFO - Epoch 14: loss=2.15518 ,acc=0.47164
+2023-11-25 19:42:19,243 - __main__ - INFO - Valid loss=2.02214 ,acc=0.46845
+2023-11-25 19:42:19,528 - __main__ - INFO - save model parameter at epoch 14
+2023-11-25 19:44:44,363 - __main__ - INFO - Epoch 15: loss=2.11709 ,acc=0.48752
+2023-11-25 19:44:54,871 - __main__ - INFO - Valid loss=1.96224 ,acc=0.47863
+2023-11-25 19:44:55,150 - __main__ - INFO - save model parameter at epoch 15
+2023-11-25 19:47:18,798 - __main__ - INFO - Epoch 16: loss=2.08031 ,acc=0.49298
+2023-11-25 19:47:29,248 - __main__ - INFO - Valid loss=1.93783 ,acc=0.48263
+2023-11-25 19:47:29,533 - __main__ - INFO - save model parameter at epoch 16
+2023-11-25 19:49:53,046 - __main__ - INFO - Epoch 17: loss=2.04798 ,acc=0.50322
+2023-11-25 19:50:03,278 - __main__ - INFO - Valid loss=1.94697 ,acc=0.48762
+2023-11-25 19:50:03,552 - __main__ - INFO - save model parameter at epoch 17
+2023-11-25 19:52:27,827 - __main__ - INFO - Epoch 18: loss=2.00980 ,acc=0.51295
+2023-11-25 19:52:38,192 - __main__ - INFO - Valid loss=1.88982 ,acc=0.49760
+2023-11-25 19:52:38,472 - __main__ - INFO - save model parameter at epoch 18
+2023-11-25 19:55:02,705 - __main__ - INFO - Epoch 19: loss=1.97377 ,acc=0.52239
+2023-11-25 19:55:13,163 - __main__ - INFO - Valid loss=1.90405 ,acc=0.49201
+2023-11-25 19:57:35,677 - __main__ - INFO - Epoch 20: loss=1.94299 ,acc=0.52941
+2023-11-25 19:57:46,141 - __main__ - INFO - Valid loss=1.87861 ,acc=0.50998
+2023-11-25 19:57:46,431 - __main__ - INFO - save model parameter at epoch 20
+2023-11-25 20:00:12,017 - __main__ - INFO - Epoch 21: loss=1.91433 ,acc=0.53740
+2023-11-25 20:00:22,568 - __main__ - INFO - Valid loss=1.82617 ,acc=0.50899
+2023-11-25 20:02:47,796 - __main__ - INFO - Epoch 22: loss=1.90164 ,acc=0.54258
+2023-11-25 20:02:58,080 - __main__ - INFO - Valid loss=1.78970 ,acc=0.52137
+2023-11-25 20:02:58,370 - __main__ - INFO - save model parameter at epoch 22
+2023-11-25 20:05:20,554 - __main__ - INFO - Epoch 23: loss=1.86436 ,acc=0.55339
+2023-11-25 20:05:30,830 - __main__ - INFO - Valid loss=1.83644 ,acc=0.50319
+2023-11-25 20:07:53,497 - __main__ - INFO - Epoch 24: loss=1.84263 ,acc=0.55795
+2023-11-25 20:08:03,828 - __main__ - INFO - Valid loss=1.81438 ,acc=0.52316
+2023-11-25 20:08:04,119 - __main__ - INFO - save model parameter at epoch 24
+2023-11-25 20:10:26,018 - __main__ - INFO - Epoch 25: loss=1.82029 ,acc=0.56452
+2023-11-25 20:10:36,268 - __main__ - INFO - Valid loss=1.78757 ,acc=0.52756
+2023-11-25 20:10:36,541 - __main__ - INFO - save model parameter at epoch 25
+2023-11-25 20:13:00,217 - __main__ - INFO - Epoch 26: loss=1.79466 ,acc=0.57027
+2023-11-25 20:13:10,504 - __main__ - INFO - Valid loss=1.77019 ,acc=0.52975
+2023-11-25 20:13:10,790 - __main__ - INFO - save model parameter at epoch 26
+2023-11-25 20:15:34,476 - __main__ - INFO - Epoch 27: loss=1.76716 ,acc=0.57887
+2023-11-25 20:15:44,682 - __main__ - INFO - Valid loss=1.71648 ,acc=0.53674
+2023-11-25 20:15:44,961 - __main__ - INFO - save model parameter at epoch 27
+2023-11-25 20:18:07,675 - __main__ - INFO - Epoch 28: loss=1.76060 ,acc=0.58138
+2023-11-25 20:18:17,617 - __main__ - INFO - Valid loss=1.71871 ,acc=0.54892
+2023-11-25 20:18:17,889 - __main__ - INFO - save model parameter at epoch 28
+2023-11-25 20:20:38,473 - __main__ - INFO - Epoch 29: loss=1.73956 ,acc=0.58558
+2023-11-25 20:20:48,908 - __main__ - INFO - Valid loss=1.73210 ,acc=0.54373
+2023-11-25 20:23:13,129 - __main__ - INFO - Epoch 30: loss=1.70996 ,acc=0.59619
+2023-11-25 20:23:23,691 - __main__ - INFO - Valid loss=1.70924 ,acc=0.54193
+2023-11-25 20:25:48,192 - __main__ - INFO - Epoch 31: loss=1.68727 ,acc=0.60157
+2023-11-25 20:25:58,622 - __main__ - INFO - Valid loss=1.68856 ,acc=0.55511
+2023-11-25 20:25:58,896 - __main__ - INFO - save model parameter at epoch 31
+2023-11-25 20:28:22,808 - __main__ - INFO - Epoch 32: loss=1.68111 ,acc=0.60461
+2023-11-25 20:28:33,460 - __main__ - INFO - Valid loss=1.69715 ,acc=0.55092
+2023-11-25 20:30:57,662 - __main__ - INFO - Epoch 33: loss=1.65063 ,acc=0.61203
+2023-11-25 20:31:08,310 - __main__ - INFO - Valid loss=1.65759 ,acc=0.55871
+2023-11-25 20:31:08,600 - __main__ - INFO - save model parameter at epoch 33
+2023-11-25 20:33:32,935 - __main__ - INFO - Epoch 34: loss=1.63808 ,acc=0.61543
+2023-11-25 20:33:43,151 - __main__ - INFO - Valid loss=1.67050 ,acc=0.55451
+2023-11-25 20:36:08,238 - __main__ - INFO - Epoch 35: loss=1.62478 ,acc=0.62136
+2023-11-25 20:36:18,030 - __main__ - INFO - Valid loss=1.65008 ,acc=0.56250
+2023-11-25 20:36:18,314 - __main__ - INFO - save model parameter at epoch 35
+2023-11-25 20:38:35,683 - __main__ - INFO - Epoch 36: loss=1.61219 ,acc=0.62289
+2023-11-25 20:38:45,927 - __main__ - INFO - Valid loss=1.69312 ,acc=0.55072
+2023-11-25 20:41:07,125 - __main__ - INFO - Epoch 37: loss=1.59478 ,acc=0.62822
+2023-11-25 20:41:17,364 - __main__ - INFO - Valid loss=1.59340 ,acc=0.57049
+2023-11-25 20:41:17,650 - __main__ - INFO - save model parameter at epoch 37
+2023-11-25 20:43:39,453 - __main__ - INFO - Epoch 38: loss=1.57836 ,acc=0.63555
+2023-11-25 20:43:49,227 - __main__ - INFO - Valid loss=1.62779 ,acc=0.56989
+2023-11-25 20:46:10,176 - __main__ - INFO - Epoch 39: loss=1.57248 ,acc=0.63606
+2023-11-25 20:46:19,738 - __main__ - INFO - Valid loss=1.64126 ,acc=0.56230
+2023-11-25 20:48:37,799 - __main__ - INFO - Epoch 40: loss=1.55060 ,acc=0.64197
+2023-11-25 20:48:47,992 - __main__ - INFO - Valid loss=1.65198 ,acc=0.55351
+2023-11-25 20:51:08,207 - __main__ - INFO - Epoch 41: loss=1.54541 ,acc=0.64643
+2023-11-25 20:51:18,321 - __main__ - INFO - Valid loss=1.59864 ,acc=0.56490
+2023-11-25 20:53:45,169 - __main__ - INFO - Epoch 42: loss=1.51974 ,acc=0.65287
+2023-11-25 20:53:54,635 - __main__ - INFO - Valid loss=1.59556 ,acc=0.56729
+2023-11-25 20:56:11,922 - __main__ - INFO - Epoch 43: loss=1.51749 ,acc=0.65223
+2023-11-25 20:56:22,386 - __main__ - INFO - Valid loss=1.61782 ,acc=0.56210
+2023-11-25 20:58:44,303 - __main__ - INFO - Epoch 44: loss=1.50436 ,acc=0.65991
+2023-11-25 20:58:54,741 - __main__ - INFO - Valid loss=1.60709 ,acc=0.56809
+2023-11-25 21:01:16,047 - __main__ - INFO - Epoch 45: loss=1.49431 ,acc=0.66080
+2023-11-25 21:01:25,741 - __main__ - INFO - Valid loss=1.60706 ,acc=0.57029
+2023-11-25 21:03:41,872 - __main__ - INFO - Epoch 46: loss=1.46932 ,acc=0.66522
+2023-11-25 21:03:51,598 - __main__ - INFO - Valid loss=1.56398 ,acc=0.57927
+2023-11-25 21:03:51,891 - __main__ - INFO - save model parameter at epoch 46
+2023-11-25 21:06:08,314 - __main__ - INFO - Epoch 47: loss=1.45917 ,acc=0.67206
+2023-11-25 21:06:17,917 - __main__ - INFO - Valid loss=1.58775 ,acc=0.58586
+2023-11-25 21:06:18,188 - __main__ - INFO - save model parameter at epoch 47
+2023-11-25 21:08:35,472 - __main__ - INFO - Epoch 48: loss=1.45179 ,acc=0.67462
+2023-11-25 21:08:45,070 - __main__ - INFO - Valid loss=1.59701 ,acc=0.57188
+2023-11-25 21:11:00,489 - __main__ - INFO - Epoch 49: loss=1.44333 ,acc=0.67482
+2023-11-25 21:11:10,064 - __main__ - INFO - Valid loss=1.54409 ,acc=0.58586
+2023-11-25 21:13:25,752 - __main__ - INFO - Epoch 50: loss=1.43332 ,acc=0.67873
+2023-11-25 21:13:35,401 - __main__ - INFO - Valid loss=1.59228 ,acc=0.57268
+2023-11-25 21:15:54,228 - __main__ - INFO - Epoch 51: loss=1.41032 ,acc=0.68728
+2023-11-25 21:16:03,813 - __main__ - INFO - Valid loss=1.56085 ,acc=0.58167
+2023-11-25 21:18:21,511 - __main__ - INFO - Epoch 52: loss=1.40287 ,acc=0.68692
+2023-11-25 21:18:31,114 - __main__ - INFO - Valid loss=1.54687 ,acc=0.58786
+2023-11-25 21:18:31,396 - __main__ - INFO - save model parameter at epoch 52
+2023-11-25 21:20:49,314 - __main__ - INFO - Epoch 53: loss=1.38979 ,acc=0.69563
+2023-11-25 21:20:58,855 - __main__ - INFO - Valid loss=1.56150 ,acc=0.58586
+2023-11-25 21:23:17,294 - __main__ - INFO - Epoch 54: loss=1.38826 ,acc=0.69325
+2023-11-25 21:23:26,902 - __main__ - INFO - Valid loss=1.56517 ,acc=0.57867
+2023-11-25 21:25:43,883 - __main__ - INFO - Epoch 55: loss=1.36539 ,acc=0.70083
+2023-11-25 21:25:53,355 - __main__ - INFO - Valid loss=1.57197 ,acc=0.58007
+2023-11-25 21:28:10,273 - __main__ - INFO - Epoch 56: loss=1.35865 ,acc=0.70374
+2023-11-25 21:28:20,039 - __main__ - INFO - Valid loss=1.55030 ,acc=0.58746
+2023-11-25 21:30:37,855 - __main__ - INFO - Epoch 57: loss=1.35304 ,acc=0.70411
+2023-11-25 21:30:47,562 - __main__ - INFO - Valid loss=1.52016 ,acc=0.59046
+2023-11-25 21:30:47,832 - __main__ - INFO - save model parameter at epoch 57
+2023-11-25 21:33:04,342 - __main__ - INFO - Epoch 58: loss=1.34364 ,acc=0.70938
+2023-11-25 21:33:13,944 - __main__ - INFO - Valid loss=1.56157 ,acc=0.58726
+2023-11-25 21:35:30,159 - __main__ - INFO - Epoch 59: loss=1.32410 ,acc=0.71584
+2023-11-25 21:35:39,750 - __main__ - INFO - Valid loss=1.54653 ,acc=0.59205
+2023-11-25 21:35:40,035 - __main__ - INFO - save model parameter at epoch 59
+2023-11-25 21:37:56,664 - __main__ - INFO - Epoch 60: loss=1.32138 ,acc=0.71526
+2023-11-25 21:38:06,293 - __main__ - INFO - Valid loss=1.51811 ,acc=0.59465
+2023-11-25 21:38:06,589 - __main__ - INFO - save model parameter at epoch 60
+2023-11-25 21:40:23,036 - __main__ - INFO - Epoch 61: loss=1.31101 ,acc=0.71973
+2023-11-25 21:40:32,734 - __main__ - INFO - Valid loss=1.56874 ,acc=0.59585
+2023-11-25 21:40:33,033 - __main__ - INFO - save model parameter at epoch 61
+2023-11-25 21:42:49,285 - __main__ - INFO - Epoch 62: loss=1.30718 ,acc=0.72062
+2023-11-25 21:42:58,954 - __main__ - INFO - Valid loss=1.51486 ,acc=0.58926
+2023-11-25 21:45:15,239 - __main__ - INFO - Epoch 63: loss=1.29712 ,acc=0.72393
+2023-11-25 21:45:24,837 - __main__ - INFO - Valid loss=1.56948 ,acc=0.58686
+2023-11-25 21:47:45,706 - __main__ - INFO - Epoch 64: loss=1.28810 ,acc=0.72848
+2023-11-25 21:47:55,252 - __main__ - INFO - Valid loss=1.49009 ,acc=0.60703
+2023-11-25 21:47:55,545 - __main__ - INFO - save model parameter at epoch 64
+2023-11-25 21:50:11,433 - __main__ - INFO - Epoch 65: loss=1.27901 ,acc=0.72883
+2023-11-25 21:50:20,918 - __main__ - INFO - Valid loss=1.52199 ,acc=0.59465
+2023-11-25 21:52:37,056 - __main__ - INFO - Epoch 66: loss=1.26787 ,acc=0.73452
+2023-11-25 21:52:46,629 - __main__ - INFO - Valid loss=1.50737 ,acc=0.59724
+2023-11-25 21:55:05,024 - __main__ - INFO - Epoch 67: loss=1.26254 ,acc=0.73465
+2023-11-25 21:55:14,788 - __main__ - INFO - Valid loss=1.50420 ,acc=0.59884
+2023-11-25 21:57:32,691 - __main__ - INFO - Epoch 68: loss=1.24583 ,acc=0.74169
+2023-11-25 21:57:42,352 - __main__ - INFO - Valid loss=1.48843 ,acc=0.60563
+2023-11-25 21:59:59,406 - __main__ - INFO - Epoch 69: loss=1.24589 ,acc=0.74189
+2023-11-25 22:00:08,946 - __main__ - INFO - Valid loss=1.50759 ,acc=0.60443
+2023-11-25 22:02:25,184 - __main__ - INFO - Epoch 70: loss=1.24005 ,acc=0.74316
+2023-11-25 22:02:34,800 - __main__ - INFO - Valid loss=1.52241 ,acc=0.60084
+2023-11-25 22:04:51,788 - __main__ - INFO - Epoch 71: loss=1.23821 ,acc=0.74600
+2023-11-25 22:05:01,336 - __main__ - INFO - Valid loss=1.52229 ,acc=0.59964
+2023-11-25 22:07:20,833 - __main__ - INFO - Epoch 72: loss=1.22709 ,acc=0.74873
+2023-11-25 22:07:30,843 - __main__ - INFO - Valid loss=1.50127 ,acc=0.60363
+2023-11-25 22:09:51,130 - __main__ - INFO - Epoch 73: loss=1.22057 ,acc=0.75158
+2023-11-25 22:10:01,343 - __main__ - INFO - Valid loss=1.52113 ,acc=0.59884
+2023-11-25 22:12:18,159 - __main__ - INFO - Epoch 74: loss=1.19622 ,acc=0.75813
+2023-11-25 22:12:27,823 - __main__ - INFO - Valid loss=1.49368 ,acc=0.61062
+2023-11-25 22:12:28,109 - __main__ - INFO - save model parameter at epoch 74
+2023-11-25 22:14:45,813 - __main__ - INFO - Epoch 75: loss=1.19221 ,acc=0.75877
+2023-11-25 22:14:55,436 - __main__ - INFO - Valid loss=1.48112 ,acc=0.61242
+2023-11-25 22:14:55,723 - __main__ - INFO - save model parameter at epoch 75
+2023-11-25 22:17:12,051 - __main__ - INFO - Epoch 76: loss=1.17765 ,acc=0.76315
+2023-11-25 22:17:21,617 - __main__ - INFO - Valid loss=1.47850 ,acc=0.61422
+2023-11-25 22:17:21,882 - __main__ - INFO - save model parameter at epoch 76
+2023-11-25 22:19:40,532 - __main__ - INFO - Epoch 77: loss=1.18608 ,acc=0.76124
+2023-11-25 22:19:50,157 - __main__ - INFO - Valid loss=1.48771 ,acc=0.61022
+2023-11-25 22:22:07,545 - __main__ - INFO - Epoch 78: loss=1.16100 ,acc=0.76741
+2023-11-25 22:22:17,071 - __main__ - INFO - Valid loss=1.48380 ,acc=0.60723
+2023-11-25 22:24:33,598 - __main__ - INFO - Epoch 79: loss=1.16850 ,acc=0.76690
+2023-11-25 22:24:43,397 - __main__ - INFO - Valid loss=1.51734 ,acc=0.59545
+2023-11-25 22:26:59,277 - __main__ - INFO - Epoch 80: loss=1.16779 ,acc=0.76770
+2023-11-25 22:27:08,826 - __main__ - INFO - Valid loss=1.49085 ,acc=0.60643
+2023-11-25 22:29:24,748 - __main__ - INFO - Epoch 81: loss=1.14950 ,acc=0.77381
+2023-11-25 22:29:34,274 - __main__ - INFO - Valid loss=1.49163 ,acc=0.61062
+2023-11-25 22:31:51,914 - __main__ - INFO - Epoch 82: loss=1.15187 ,acc=0.77312
+2023-11-25 22:32:01,463 - __main__ - INFO - Valid loss=1.47353 ,acc=0.61162
+2023-11-25 22:34:18,785 - __main__ - INFO - Epoch 83: loss=1.14910 ,acc=0.77288
+2023-11-25 22:34:29,318 - __main__ - INFO - Valid loss=1.47360 ,acc=0.61022
+2023-11-25 22:36:45,446 - __main__ - INFO - Epoch 84: loss=1.13759 ,acc=0.77759
+2023-11-25 22:36:55,001 - __main__ - INFO - Valid loss=1.50663 ,acc=0.60443
+2023-11-25 22:39:10,611 - __main__ - INFO - Epoch 85: loss=1.14352 ,acc=0.77523
+2023-11-25 22:39:20,047 - __main__ - INFO - Valid loss=1.48443 ,acc=0.60763
+2023-11-25 22:41:37,553 - __main__ - INFO - Epoch 86: loss=1.14180 ,acc=0.77792
+2023-11-25 22:41:46,889 - __main__ - INFO - Valid loss=1.49896 ,acc=0.59924
+2023-11-25 22:44:03,981 - __main__ - INFO - Epoch 87: loss=1.13472 ,acc=0.77814
+2023-11-25 22:44:13,458 - __main__ - INFO - Valid loss=1.49075 ,acc=0.60803
+2023-11-25 22:46:33,360 - __main__ - INFO - Epoch 88: loss=1.12774 ,acc=0.78003
+2023-11-25 22:46:42,885 - __main__ - INFO - Valid loss=1.43620 ,acc=0.62360
+2023-11-25 22:46:43,183 - __main__ - INFO - save model parameter at epoch 88
+2023-11-25 22:48:58,933 - __main__ - INFO - Epoch 89: loss=1.13164 ,acc=0.78107
+2023-11-25 22:49:08,262 - __main__ - INFO - Valid loss=1.48868 ,acc=0.61262
+2023-11-25 22:51:26,585 - __main__ - INFO - Epoch 90: loss=1.12402 ,acc=0.77970
+2023-11-25 22:51:36,826 - __main__ - INFO - Valid loss=1.48810 ,acc=0.61122
+2023-11-25 22:53:54,970 - __main__ - INFO - Epoch 91: loss=1.12531 ,acc=0.78223
+2023-11-25 22:54:04,240 - __main__ - INFO - Valid loss=1.47726 ,acc=0.61661
+2023-11-25 22:56:20,200 - __main__ - INFO - Epoch 92: loss=1.10814 ,acc=0.78660
+2023-11-25 22:56:29,496 - __main__ - INFO - Valid loss=1.45566 ,acc=0.61761
+2023-11-25 22:58:43,950 - __main__ - INFO - Epoch 93: loss=1.11820 ,acc=0.78483
+2023-11-25 22:58:53,394 - __main__ - INFO - Valid loss=1.49474 ,acc=0.60962
+2023-11-25 23:01:10,682 - __main__ - INFO - Epoch 94: loss=1.10316 ,acc=0.78700
+2023-11-25 23:01:20,030 - __main__ - INFO - Valid loss=1.47044 ,acc=0.61542
+2023-11-25 23:03:40,311 - __main__ - INFO - Epoch 95: loss=1.11055 ,acc=0.78667
+2023-11-25 23:03:50,810 - __main__ - INFO - Valid loss=1.48800 ,acc=0.61102
+2023-11-25 23:06:15,313 - __main__ - INFO - Epoch 96: loss=1.10683 ,acc=0.78807
+2023-11-25 23:06:25,729 - __main__ - INFO - Valid loss=1.46703 ,acc=0.61382
+2023-11-25 23:08:50,280 - __main__ - INFO - Epoch 97: loss=1.09734 ,acc=0.78818
+2023-11-25 23:09:01,040 - __main__ - INFO - Valid loss=1.49101 ,acc=0.60483
+2023-11-25 23:11:25,070 - __main__ - INFO - Epoch 98: loss=1.11083 ,acc=0.78842
+2023-11-25 23:11:35,246 - __main__ - INFO - Valid loss=1.50632 ,acc=0.60683
+2023-11-25 23:13:52,531 - __main__ - INFO - Epoch 99: loss=1.11345 ,acc=0.78649
+2023-11-25 23:14:01,820 - __main__ - INFO - Valid loss=1.50397 ,acc=0.60823
+2023-11-25 23:16:24,035 - __main__ - INFO - Epoch 100: loss=1.08847 ,acc=0.79127
+2023-11-25 23:16:34,738 - __main__ - INFO - Valid loss=1.47870 ,acc=0.61522
+2023-11-25 23:16:51,100 - __main__ - INFO - Test loss=2.74511 ,acc=0.36601
+2023-11-25 23:16:51,165 - __main__ - INFO - training model google finish
+2023-11-25 23:16:51,165 - __main__ - INFO - time cost: 15006.616212368011

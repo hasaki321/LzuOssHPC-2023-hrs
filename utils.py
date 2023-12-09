@@ -6,8 +6,10 @@ import yaml
 import logging
 from easydict import EasyDict as edict
 import pickle
+import torch.nn as nn
+from torch.nn.modules.batchnorm import _BatchNorm
 
-from model import GoogLeNet, ResNet,VGG
+from model import GoogLeNet, ResNet,VGG,EffNetV2
 
 
 def get_transform(mode="train"):
@@ -51,15 +53,31 @@ def load_config(file):
 def get_model(config):
     model = config.model
     if model == "google":
-        model = GoogLeNet(num_classes=config.num_classes,
-                          aux_logits=config.aux_logits,
-                          init_weights=config.init_weights)
+        model = GoogLeNet(config.num_classes)
     elif model == "vgg":
         model = VGG(config.num_classes)
     elif model == "resnet":
         model = ResNet(config.num_classes)
+    elif model == "effnet":
+        model = EffNetV2(config.num_classes)
     return model
 
 def dump_data(config,*data):
     with open(config.save_data,"wb") as f:
         pickle.dump([*data],f,protocol=pickle.HIGHEST_PROTOCOL)
+
+
+def disable_running_stats(model):
+    def _disable(module):
+        if isinstance(module, _BatchNorm):
+            module.backup_momentum = module.momentum
+            module.momentum = 0
+
+    model.apply(_disable)
+
+def enable_running_stats(model):
+    def _enable(module):
+        if isinstance(module, _BatchNorm) and hasattr(module, "backup_momentum"):
+            module.momentum = module.backup_momentum
+
+    model.apply(_enable)
